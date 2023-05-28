@@ -1,0 +1,11 @@
+O padrão Iterator é um padrão de projeto comportamental que permite percorrer elementos de uma coleção sem expor sua estrutura subjacente. Ele fornece uma maneira de acessar sequencialmente os elementos de uma coleção sem expor os detalhes de implementação da coleção.
+
+No contexto de uma biblioteca com uma coleção de livros, o padrão Iterator pode ser aplicado para percorrer os livros da biblioteca sem expor a implementação específica da coleção de livros.
+
+1 - A classe Biblioteca representa a biblioteca e implementa a interface Iterable, que define o método iterator(). Essa classe possui um array de Livro e mantém o número atual de livros na biblioteca.
+
+2 - A classe Livro representa um livro com um atributo titulo e seus respectivos métodos getter e setter.
+
+3 - A classe BibliotecaIterator implementa a interface Iterator e é responsável por percorrer os livros na biblioteca. Ela mantém uma referência à coleção de livros e possui um índice para controlar a posição atual durante a iteração.
+
+Os casos de teste abrangem diferentes aspectos do padrão Iterator, como iteração, exceções, remoção e capacidade máxima da biblioteca, garantindo o funcionamento adequado da implementação do padrão Iterator na biblioteca de livros.
